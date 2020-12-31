@@ -66,6 +66,8 @@ open abstract class BaseView() : AppCompatActivity(), AnkoLogger {
     basePresenter?.doRequestPermissionsResult(requestCode, permissions, grantResults)
   }
 
+  open fun showLocation(latitude : Double, longitude : Double) {}
+
   open fun showPlacemark(placemark: PlacemarkModel) {}
   open fun showPlacemarks(placemarks: List<PlacemarkModel>) {}
   open fun showProgress() {}
